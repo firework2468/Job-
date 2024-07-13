@@ -1,23 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Job++</title>
+  <link rel="icon" href="img/logo.png">
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {}
+
+    h1 {}
+
+    p {
+      font-family: Helvetica
+    }
+
+    .important {}
+
+    <- this will require you to declare a class="important" in one of your HTML elements #interesting {}
+
+    <- this will require you to declare a id="interesting" in one of your HTML elements
+  </style>
+
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#latest_job">Latest Job</a></li>
+      <li><a href="#coding_assessment">Coding Assessment</a></li>
+      <li><a href="#related_link">Related Link</a></li>
+      <li></li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+
+  <!--- Headings --->
+  <div class="header-container">
+    <div id="header-item:nth-of-type(1)">
+      <img src="img/whole_logo.png" alt="Job++" width=20% />
+    </div>
+    <div id="header-item:nth-of-type(2)">
+      <h3>Provide information and resources about finding job</h3>
+    </div>
+    <!-- <div id="header-item:nth-of-type(3)">
+      <button type="button">Coding Assessment</button>
+      <button type="button">Behaviour Questions</button>
+    </div> -->
+  </div>
+
+
+  <div id="about">
+    <h2>About</h2>
+    <p>We all know that for new graduates, it's particularly difficult to find a job these days; we need the latest open
+      positions and a variety of information to prepare for interviews. My own experience has taught me that looking
+      around online for all this news and information can be very time-consuming and requires having a dozen or so
+      websites open on your computer at all times. Therefore, my peers and I were in desperate need of a platform to
+      aggregate news and information to help us in our job finding.</p>
+  </div>
+
+  <div id="latest_job" class="revealable">
+    <h2>Latest Job</h2>
+    <div class="job-container">
+      <a class="job-element" href="https://www.linkedin.com/jobs/">Linkedin</a>
+      <a class="job-element" href="https://app.joinhandshake.com/stu/postings">Handshake</a>
+      <a class="job-element"
+        href="https://haooffer.net/new-grad/?0=1&nations=US&oppTypes=New+Grad&types=SDE">Haooffer</a>
+    </div>
+    <div class="job-container">
+      <a class="job-element" href="https://github.com/ReaVNaiL/New-Grad-2024">New-Grad-2024</a>
+      <a class="job-element" href="https://github.com/SimplifyJobs/New-Grad-Positions">New-Grad-Positions</a>
+    </div>
+    <div class="job-container">
+      <a class="job-element" href="https://github.com/SimplifyJobs/Summer2024-Internships">Summer2024-Internships</a>
+      <a class="job-element" href="https://github.com/SimplifyJobs/Summer2024-Internships">Summer2024-Internships</a>
+    </div>
+  </div>
+
+  <!--- Coding Assessment --->
+  <div id="coding_assessment" class="revealable">
+    <h2>Coding Assessment</h2>
+    <div id="coding-content">
+      <a href="https://leetcode.com/problemset/all/">
+        <img src="img/leetode.png" width="300" height="200" alt="LeetCode" />
+      </a>
+      <a href="https://neetcode.io/practice">
+        <img src="img/NeetCode.png" width="380" height="auto" alt="NeetCode" />
+      </a>
+    </div>
+    <div id="coding-content">
+      <a class="job-element" href="https://www.techinterviewhandbook.org/coding-interview-study-plan/">Tech Interview
+        Handbook</a>
+      <a class="job-element"
+        href="https://github.com/jackfrued/Python-100-Days/blob/master/Day01-15/01.%E5%88%9D%E8%AF%86Python.md">Python-100-Days</a>
+    </div>
+    <div id="coding-content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0K_eZGS5NsU?si=d13zcXocGU9FNBl8"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="related_link" class="revealable">
+    <h2>Related links</h2>
+    <div class="job-container">
+      <a class="job-element" href="https://roadmap.sh/">Roadmaps</a>
+      <a class="job-element"
+        href="https://sugarac.gitbooks.io/high-frequency-interview-questions-and-answers/content/my-bq-answers-summary.html">Behavioral
+        Questions</a>
+      <a class="job-element" href="https://resumeworded.com/">Resume Worded</a>
+    </div>
+  </div>
+
+
+  <!--- comment --->
+  <div class="petition revealable" id="petition">
+    <h2>Hear Your Voice📢</h2>
+    <div class="petition-para">
+      <div id="like-para">
+        <p>Think we're doing a good job!</p>
+        <button id="like-btn">❤️ 0</button>
+      </div>
+      <P>Have a better idea, make your suggestion! 💬</p>
+    </div>
+
+    <div class="petition-container">
+      <form id="sign-petition" title="sign-petition">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <label>School:</label>
+        <input type="text" id="school">
+        <label>Email:</label>
+        <input type="text" id="email">
+        <label>Suggestion:</label>
+        <textarea id="suggestion" rows="4" cols="75"></textarea>
+        <button id="sign-now-button" type="submit">Submit</button>
+      </form>
+      <div class="signatures">
+        <p>🖊️ DJ from NYU made a proposal.</p>
+        <p>🖊️ Amy from UMD made a proposal.</p>
+        <p>🖊️ Teresa from USD made a proposal.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">thanks-modal-content</p>
+        <button id="closeButton" class="modal-close-button">Close</button>
+      </div>
+      <img src="img/thank-you.jpeg" alt="Thank you" id="modal-image" height=50% width=50% />
+    </div>
+
+  </div>
+
+
+  <div class="footer" class="revealable">
+    <p>More Ideas</p>
+    <p>Connect Me</p>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

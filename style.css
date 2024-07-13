@@ -2,3 +2,407 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+  /* Add a background color or image */
+  background-color: white;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+
+  /* Adjust the padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red
+}
+
+a:active {
+  color: black;
+  background-color: yellow;
+}
+
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {}
+
+ol li {}
+
+
+ul {}
+
+ul li {}
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color: #65c6ba;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #649dad;
+}
+
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-item:nth-of-type(1) {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header-item:nth-of-type(2) {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header-item:nth-of-type(3) {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #65c6ba;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.navbar li {
+  float: left;
+  margin: 0 15px;
+  list-style-type: none;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #649dad;
+  color: #fff;
+}
+
+/* Add style to button */
+#theme-button {
+  background-color: white;
+  color: #65c6ba;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+#theme-button-li {
+  float: right;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+
+}
+
+#about {
+  text-align: center;
+  max-width: 800px; /* Set a maximum width to control the text width */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+/* Style the text inside the #about div */
+#about p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job-element {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.job-element:hover {
+  transform: scale(1.05);
+}
+
+#coding-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#coding-content img {
+  align-self: center;
+}
+
+
+.petition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#like-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: ;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+#sign-petition {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#sign-now-button {
+  background-color: #65c6ba;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.error {
+  border-style: solid !important;
+  ;
+  border-width: 2px !important;
+  ;
+  border-color: red !important;
+  ;
+  background: pink !important;
+  ;
+}
+
+.signatures {
+  padding-left: 50px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 3px solid #ccc;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ebeced;
+  color: #333;
+  font-weight: bold;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue;
+  /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+  /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
